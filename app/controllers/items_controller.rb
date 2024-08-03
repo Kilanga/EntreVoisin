@@ -48,7 +48,7 @@ class ItemsController < ApplicationController
     if @item.save
       redirect_to @item
     else
-      render :new, status: :unprocessable_entity
+      render :new, status: :unprocessable_content
     end
   end
 
@@ -59,7 +59,7 @@ class ItemsController < ApplicationController
     if @item.update(items_params)
       redirect_to @item
     else
-      render :new, status: :unprocessable_entity
+      render :new, status: :unprocessable_content
     end
   end
 
