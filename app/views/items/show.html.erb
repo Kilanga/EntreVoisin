@@ -13,6 +13,7 @@
       <h1><%= @item.name.capitalize %></h1>
 
 <%# View owner %>
+
     <% if current_user == @item.user %>
       <p><%= @item.description %></p>
       <br><br>
